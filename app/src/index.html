@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="styles.css">
+    <title>D-Energy: Renueva la energia</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <a href="#">
+            <img src="data:image/png;base64,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" alt="d-energy" />
+        </a>
+        </div>
+        <div class="menu d-none d-md-block">
+                <ul class="main-menu">
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">Huella de carbono</a></li>
+                    <li><a href="#">Personas físicas</a></li>
+                    <li><a href="#">Negocios</a></li>
+                    <li><a href="#">Desarrolladores</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                </ul>
+        </div>
+        <div class="get-started">
+            <button class="btn-sec-s">Iniciar sesión</button>
+            <button class="btn-main-s" id="btn-empezar">Empezar</button>
+        </div>
+    </nav>
+    <section class="sec-home">
+        <div class="home-cta">
+            <div class="cta-text">
+                <span>Empieza a comercializar tus D-REC</span>
+                <i class="bi bi-arrow-right"></i>
+            </div>
+            <h2 class="home-title h1">Ayudamos al mundo a eliminar la huella de carbono</h2>
+            <p class="home-description">D-Energy es el lugar más sencillo para comprar y vender certificados de energia. Regístrate y comienza hoy mismo</p>
+            <div class="lead-magnet row aling-items-center">
+                <div class="col input-col">
+                    <input type="text" class="form-control input-text" placeholder="Dirección de correo electrónico"/>
+                </div>
+                <div class="col">
+                <button class="btn-main">Empezar</button>
+            </div>
+            </div>
+        </div>
+        <div class="home-img d-none d-md-block">
+            <img src="images/wallet.png" alt="wallet" />
+        </div>
+    </section>
+    <section class="sec-features">
+        <div class="intro">
+            <h3>Ayuda a limpiar al mundo y logra un beneficio mutuo</h3>
+            <p>En D-Energy abrimos al mundo la posibilidad de cambiar el uso de la energia. Contribuyemos cada día a mejorar nuestro planeta. </p>
+        </div>
+        <div class="features">
+            <div class="text">
+                <div class="feature">
+                <span class="icon-sm">
+                    <i class="bi bi-lightning-fill"></i>
+                </span>
+                <div class="description">
+                    <h4 class="description-title">Gestiona tu energia renovable</h4>
+                    <p class="description-text">Tu decides que hacer con tus excedentes, tener la posibilidad de lograr una recompensa economica y ayudar a otras empresas a limpiar su huella de carbono.</p>
+                </div>
+            </div>
+            <div class="feature">
+            <span class="icon-sm">
+                <i class="bi bi-basket3-fill"></i>
+            </span>
+            <div class="description">
+            <h4 class="description-title">Comercializa tus NFT's en nuestro Marketplace</h4>
+            <p class="description-text">
+                Nunca antes ha sido tan facil y rapido comercializar tu energía, es posible gracias a nuestro Marketplace donde podrás comprar y vender los certificados D-Rec.
+            </p>
+            </div>
+            </div>
+            <div class="feature">
+            <span class="icon-sm">
+                <i class="bi bi-cash-stack"></i>
+            </span>
+            <div class="description">
+                <h4 class="description-title">Tu decides lo que quieres</h4>
+                <p class="description-text">
+                    En nuestro marketplace ofrecemos la opción de realizar transacciones comerciales en diversas divisas, así como en criptomonedas. 
+                </p>
+            </div>
+            </div>
+            </div>
+            <div class="image d-none d-md-block">
+                <img src="images/chart.png" alt="chart"/>
+            </div>
+        </div>
+    </section>
+    <section class="sec-benefits">
+        <div class="intro">
+            <h3>El Marketplace de energia renovable principal</h3>
+            <p>Nuestras propuestas para hacer más facil el mercado de la energia renovable</p>
+        </div>
+        <div class="benefit-cards row">
+            <div class="benefit col-md">
+                <i class="bi bi-people-fill"></i>
+                <div class="description">
+                    <h4 class="title">Todos somos participes en el mercado de la energía</h4>
+                    <p class="text">Damos la posibilidad de cualquier persona o empresa, que aporte su granito de arena para un mundo más verde</p>
+                </div>
+                <p class="cta">Te explicamos como hacerlo!</p>
+            </div>
+            <div class="benefit col-md">
+                <i class="bi bi-globe"></i>
+                <div class="description">
+                    <h4 class="title">Un Marketplace para comprar y vender tus D-Rec</h4>
+                    <p class="text">Eliminamos los intermediarios y facilitamos la posibilidad de comprar tus certificados de energía renovable y logramos un mercado operativo 24/7.</p>
+                </div>
+                <p class="cta">
+                    Aquí te damos mucha más información de como comercializar en nuestro Marketplace</p>
+            </div>
+            <div class="benefit col-md">
+                <i class="bi bi-recycle"></i>
+                <div class="description">
+                    <h4 class="title">Lo que no usamos, que lo aproveche otro</h4>
+                    <p class="text">Para un mundo mucho más sostenible y justo, trabajamos para lograr nuestro proposito.</p>
+                </div>
+                <p class="cta">
+                    Toda nuestra información y objetivos con D-Energy</p>
+            </div>
+        </div>
+    </section>
+    <section class="sec-kpis row">
+        <div class="kpi col-md">
+            <span class="number">4 Tipos de energia</span>
+            <span class="desc">Abrimos la posibilidad de usar varías energias renovalbes</span>
+        </div>
+        <div class="kpi col-md">
+            <span class="number">100+</span>
+            <span class="desc">Disponible en cualquier parte del mundo</span>
+        </div>
+        <div class="kpi col-md">
+            <span class="number">24/7</span>
+            <span class="desc">Operativo todo los días del año y a cualquier hora</span>
+        </div>
+    </section>
+    <section class="sec-onboarding">
+        <div class="intro">
+            <h3>Empieza en tan solo un minuto</h3>
+            <p>En D-Energy trabajamos con varías energias renovables</p>
+        </div>
+        <div class="steps">
+            <div class="icon-desc">
+                <i class="bi bi-person-plus-fill"></i>
+                <h4 class="title">
+                    Crea una cuenta
+                </h4>
+            </div>
+            <div class="step-separator"></div>
+            <div class="icon-desc">
+                <i class="bi bi-bezier2"></i>
+                <h4 class="title">
+                    Vincula tu API de tu generador de energía
+                </h4>
+            </div>
+            <div class="step-separator"></div>
+            <div class="icon-desc">
+                <i class="bi bi-coin"></i>
+                <h4 class="title">
+                    Comienza a comprar y vender
+                </h4>
+            </div>
+        </div>
+    </section>
+    <section class="sec-footer-cta">
+        <div class="footer-cta">
+            <h4 class="title">Este 2023 compra tus D-Rec con un 20% de descuento</h4>
+            <p class="cta-description">Conoce cómo facilitamos la posibilidad de comprar y vender vuestros D-REC.</p>
+            <button class="btn-main">Comienza a ganar</button>
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
