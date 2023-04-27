@@ -9,7 +9,7 @@ contract EnergyCertificate is ERC721Enumerable {
     
     address public solarPanelAddress; // dirección del contrato SolarPanel
     
-    uint256 public energyThreshold = 1000000; // valor en MWh para crear un nuevo certificado
+    uint256 public energyThreshold = 1000; // valor en MWh para crear un nuevo certificado
     
     uint256 public lastCertificateEnergy; // variable para registrar la última cantidad de energía utilizada para crear el certificado
     
