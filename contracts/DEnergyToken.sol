@@ -24,7 +24,7 @@ contract DEnergyToken is Context, IERC20, IERC20Metadata {
     constructor() {
         _name = "D-Energy Token";
         _symbol = "DGY";
-        _maxSupply = 90000000 * (uint256(10) ** 18);
+        _maxSupply = 100000000 * (uint256(10) ** 18);
         _owner = _msgSender();
     }
 
