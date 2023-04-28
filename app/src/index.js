@@ -33,7 +33,7 @@ const App = {
 };
 
 window.addEventListener("load", function() {
-  const btnEmpezar = document.getElementById("btn-empezar");
+  const btnEmpezar = document.getElementById("btn-billetera");
 
   btnEmpezar.addEventListener("click", async function() {
     // Se inicia la conexión con Metamask al hacer clic en el botón "Empezar"
